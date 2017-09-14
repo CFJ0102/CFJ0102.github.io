@@ -17,7 +17,7 @@
 
 <meta name="description" content="本来大四生，想走web前端方向，平时学文章不多，为了有个良好习惯，搭建个人博客网站，存放笔记、趣事文章，朋友介绍用hexo，简单快速，尝试一下，为自己积累经验. ###HexoHexo(中文官方网站)是一个快速，简洁且高效的博客框架. 让上百个页面在几秒内瞬间完成渲染. Hexo支持Github Flavored Markdown的所有功能， 甚至可以整合Octopress的大多数插件. 并自己也">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MyBlog">
+<meta property="og:title" content="HEXO搭建个人博客">
 <meta property="og:url" content="http://abbie.top/2017/09/12/MyBlog/index.html">
 <meta property="og:site_name" content="Abbie">
 <meta property="og:description" content="本来大四生，想走web前端方向，平时学文章不多，为了有个良好习惯，搭建个人博客网站，存放笔记、趣事文章，朋友介绍用hexo，简单快速，尝试一下，为自己积累经验. ###HexoHexo(中文官方网站)是一个快速，简洁且高效的博客框架. 让上百个页面在几秒内瞬间完成渲染. Hexo支持Github Flavored Markdown的所有功能， 甚至可以整合Octopress的大多数插件. 并自己也">
@@ -31,9 +31,9 @@
 <meta property="og:image" content="https://i.imgur.com/TG5DVo9.png">
 <meta property="og:image" content="https://i.imgur.com/iMmdP9j.png">
 <meta property="og:image" content="https://i.imgur.com/cMxGOcG.png">
-<meta property="og:updated_time" content="2017-09-13T14:04:12.866Z">
+<meta property="og:updated_time" content="2017-09-14T14:41:45.388Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MyBlog">
+<meta name="twitter:title" content="HEXO搭建个人博客">
 <meta name="twitter:description" content="本来大四生，想走web前端方向，平时学文章不多，为了有个良好习惯，搭建个人博客网站，存放笔记、趣事文章，朋友介绍用hexo，简单快速，尝试一下，为自己积累经验. ###HexoHexo(中文官方网站)是一个快速，简洁且高效的博客框架. 让上百个页面在几秒内瞬间完成渲染. Hexo支持Github Flavored Markdown的所有功能， 甚至可以整合Octopress的大多数插件. 并自己也">
 <meta name="twitter:image" content="https://i.imgur.com/ZNuCF5J.png">
 
@@ -67,7 +67,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>MyBlog | Abbie</title>
+<title>HEXO搭建个人博客 | Abbie</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -147,13 +147,13 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情链接</li>
+                        <li>Friends</li>
                         
                         
-                        <li>关于我</li>
+                        <li>About Me</li>
                         
                     </ul>
                 </div>
@@ -265,7 +265,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap"><article id="post-MyBlog" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -286,7 +286,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      MyBlog
+      HEXO搭建个人博客
     </h1>
   
 
@@ -307,13 +307,15 @@
 <p>###Hexo<br>Hexo(中文官方网站)是一个快速，简洁且高效的博客框架. 让上百个页面在几秒内瞬间完成渲染. Hexo支持Github Flavored Markdown的所有功能， 甚至可以整合Octopress的大多数插件. 并自己也拥有强大的插件系统.</p>
 <p>#1.安装Github和NodeJs</p>
 <ol>
-<li><p><a href="https://git-for-windows.github.io/" target="_blank" rel="external">Github下载地址</a><br>命令行查看Github版本: <code>git version</code>.</p>
+<li><p><a href="https://git-for-windows.github.io/" target="_blank" rel="external">Github下载地址</a></p>
+<p> 命令行查看Github版本: <code>git version</code>.</p>
 <p> <img src="https://i.imgur.com/ZNuCF5J.png" alt=""></p>
 </li>
-<li><a href="https://nodejs.org/en/" target="_blank" rel="external">NodeJs下载地址</a></li>
+<li><p><a href="https://nodejs.org/en/" target="_blank" rel="external">NodeJs下载地址</a></p>
+<p> 命令行查看NodeJs版本: <code>node -v</code>.</p>
+<p> <img src="https://i.imgur.com/AtR71LZ.png" alt=""></p>
+</li>
 </ol>
-<p>命令行查看NodeJs版本: <code>node -v</code>.</p>
-<p>  <img src="https://i.imgur.com/AtR71LZ.png" alt=""></p>
 <p>注：1.安装NodeJs时，在Custom Setup中选择<code>add to path</code>.   2.打开下载好的Git里的git-bash.exe<img src="https://i.imgur.com/Kl3noJi.png" alt="">书写命令.</p>
 <p>#2.安装Hexo</p>
 <ol>
@@ -388,17 +390,17 @@ package.json：项目所需模块项目的配置信息
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/09/12/MyBlog/">MyBlog</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">John Doe</a></p>
-        <p><span>发布时间:</span>2017-09-12, 14:47:43</p>
-        <p><span>最后更新:</span>2017-09-13, 22:04:12</p>
+        <p><span>Title:</span><a href="/2017/09/12/MyBlog/">HEXO搭建个人博客</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">John Doe</a></p>
+        <p><span>Created:</span>2017-09-12, 14:47:43</p>
+        <p><span>Updated:</span>2017-09-14, 22:41:45</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/09/12/MyBlog/" title="MyBlog">http://abbie.top/2017/09/12/MyBlog/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://abbie.top/2017/09/12/MyBlog/　　作者: John Doe" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2017/09/12/MyBlog/" title="HEXO搭建个人博客">http://abbie.top/2017/09/12/MyBlog/</a>
+            <span class="copy-path" data-clipboard-text="From http://abbie.top/2017/09/12/MyBlog/　　By John Doe" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
         </p>
     </div>
 
@@ -408,7 +410,7 @@ package.json：项目所需模块项目的配置信息
 </article>
 
     <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目录</strong>
+        <strong class="toc-title">Contents</strong>
         
             
         
@@ -424,10 +426,10 @@ package.json：项目所需模块项目的配置信息
         }
     </style>
 
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+    <input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
 
     <script>
-        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
     </script>
 
 
@@ -446,7 +448,7 @@ package.json：项目所需模块项目的配置信息
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"MyBlog　| Abbie　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"HEXO搭建个人博客　| Abbie　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -466,17 +468,17 @@ package.json：项目所需模块项目的配置信息
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
         
 
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/09/12/MyBlog/">MyBlog</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/09/12/MyBlog/">HEXO搭建个人博客</a></li></ul>
 
 
 
@@ -493,14 +495,14 @@ package.json：项目所需模块项目的配置信息
                 2016-2017 John Doe
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -509,7 +511,7 @@ package.json：项目所需模块项目的配置信息
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -542,9 +544,9 @@ package.json：项目所需模块项目的配置信息
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
