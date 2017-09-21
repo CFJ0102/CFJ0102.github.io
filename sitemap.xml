@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://abbie.top/tags/index.html</loc>
+    
+    <lastmod>2017-09-21T13:01:03.476Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://abbie.top/2017/09/12/hexo-github/</loc>
     
-    <lastmod>2017-09-21T12:43:43.967Z</lastmod>
+    <lastmod>2017-09-21T13:00:35.199Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>http://abbie.top/about/index.html</loc>
     
     <lastmod>2017-09-21T12:32:45.305Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://abbie.top/tags/index.html</loc>
-    
-    <lastmod>2017-09-21T05:07:09.256Z</lastmod>
     
   </url>
   
