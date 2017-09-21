@@ -107,11 +107,90 @@
 
         <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >about</h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >HEXO搭建个人博客</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                
+                <p>本来大四生，想走web前端方向，平时学文章不多，为了有个良好习惯，搭建个人博客网站，存放笔记、趣事文章，朋友介绍用hexo，简单快速，尝试一下，为自己积累经验.</p>
+<p>###Hexo<br>Hexo(中文官方网站)是一个快速，简洁且高效的博客框架. 让上百个页面在几秒内瞬间完成渲染. Hexo支持Github Flavored Markdown的所有功能， 甚至可以整合Octopress的大多数插件. 并自己也拥有强大的插件系统.</p>
+<p>#1.安装Github和NodeJs</p>
+<ol>
+<li><p><a href="https://git-for-windows.github.io/" target="_blank" rel="external">Github下载地址</a></p>
+<p> 命令行查看Github版本: <code>git version</code>.</p>
+<p> <img src="https://i.imgur.com/ZNuCF5J.png" alt=""></p>
+</li>
+<li><p><a href="https://nodejs.org/en/" target="_blank" rel="external">NodeJs下载地址</a></p>
+<p> 命令行查看NodeJs版本: <code>node -v</code>.</p>
+<p> <img src="https://i.imgur.com/AtR71LZ.png" alt=""></p>
+</li>
+</ol>
+<p>注：1.安装NodeJs时，在Custom Setup中选择<code>add to path</code>.   2.打开下载好的Git里的git-bash.exe<img src="https://i.imgur.com/Kl3noJi.png" alt="">书写命令.</p>
+<p>#2.安装Hexo</p>
+<ol>
+<li>在任意盘中建立一个文件夹来存放hexo，如<code>D:\mybolg</code>.</li>
+<li>命令行cd到mybolg文件夹下.</li>
+<li><p>安装hexo命令：<code>$ npm install -g hexo-cli</code></p>
+<p>  注：一直未响应，可用国内npm镜像安装<br> <code>$ npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p>
+</li>
+<li><p>初始化命令：<code>hexo init</code></p>
+<p> <img src="https://i.imgur.com/o64pRNi.png" alt=""></p>
+<pre><code> node_modules：是依赖包
+ public：存放的是生成的页面
+ scaffolds：命令生成文章等的模板
+ source：用命令创建的各种文章
+ themes：主题
+ _config.yml：整个博客的配置
+ db.json：source解析所得到的
+ package.json：项目所需模块项目的配置信息
+</code></pre></li>
+</ol>
+<p>#3.Hexo本地配置</p>
+<ol>
+<li><p>打开myblog文件，修改_config.yml文件的一些配置</p>
+<pre><code> `deploy:
+   type: git
+   repo: https://github.com/YourgithubName/YourgithubName.github.io.git
+   branch: master`
+</code></pre><p> 注：每个冒号后都有一个空格,<code>YourgithubName</code>为你的Github账户名.</p>
+</li>
+<li>安装：<code>npm i hexo-server</code> </li>
+<li><p>命令行：</p>
+<pre><code> `hexo clean 
+  hexo generate
+  hexo server`
+</code></pre></li>
+<li><p>打开浏览器输入：<code>http://localhost:4000</code>，本地上传成功了<br>#4. Github账户的注册和配置</p>
+</li>
+<li><p>Github注册,<a href="http://github.com" target="_blank" rel="external">官网网址</a></p>
+<p> 注：注册时填写邮箱，点击Github发送注册确认信，确认注册，结束注册流程.</p>
+</li>
+<li><p>创建仓库<br>登陆之后，点击页面右上角的加号，选择New repository<br>在Repository name下填写yourname.github.io，Description (optional)下填写一些简单的描述（可不写）.</p>
+<p> <img src="https://i.imgur.com/5hDiJZ8.png" alt=""></p>
+</li>
+<li><p>配置Github账户信息<br>返回git.bash.exe中，输入：</p>
+<p> <code>git config --global user.name &quot;YourName&quot;</code></p>
+<p> <img src="https://i.imgur.com/AaAnl8O.png" alt=""></p>
+<p> <code>git config --global user.email &quot;YourEmail&quot;</code></p>
+<p> <img src="https://i.imgur.com/mqDdsCz.png" alt=""></p>
+<p> 注：YourName和YourEmail是注册Github的账户名和邮箱.</p>
+</li>
+<li><p>创建SSH，命令行输入：<code>ssh-keygen -t rsa -C &quot;youremail@example.com</code></p>
+<p> 注：ssh生成失败的情况下，需要在电脑-属性-高级系统属性-环境变量中将系统变量中的path，添加值：<code>ssh-keygen.exe</code>的路径，路径在Git/usr/bin目录下，找不到可以搜索下.</p>
+</li>
+<li>生成ssh后，会有两个文件，<code>id_rsa.pub</code>和<code>id_rsa</code>将<code>id_rsa.pub</code>打开，拷贝内容放到Github中.Github官网打开<code>Settings</code>中<code>SSH and GPG keys</code>，创建新的ssh,<code>NEW SSH KEY</code>.</li>
+</ol>
+<p><img src="https://i.imgur.com/TG5DVo9.png" alt=""><br><img src="https://i.imgur.com/iMmdP9j.png" alt=""><br><img src="https://i.imgur.com/cMxGOcG.png" alt=""></p>
+<p>#5.联系Hexo与Github page</p>
+<ol>
+<li>安装：<code>npm install hexo-deployer-git --save</code>,才能将博客部署到到github服务器上并可供人浏览.</li>
+<li><p>每次部署必备步骤</p>
+<pre><code>  hexo clean
+   hexo generate
+   hexo deploy
+</code></pre><p>注：在<code>hexo deploy</code>过程中要输入你的Github账户名和密码.<br>在浏览器中输入<a href="http://yourgithubname.github.io,就打开你的个人微博了" target="_blank" rel="external">http://yourgithubname.github.io,就打开你的个人微博了</a>.</p>
+</li>
+</ol>
+
             </div>
 
             <!-- Post Comments -->
@@ -173,8 +252,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://abbie.top/2017/09/21/about/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://abbie.top/2017/09/21/about/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://abbie.top/2017/09/12/hexo+github/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://abbie.top/2017/09/12/hexo+github/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
