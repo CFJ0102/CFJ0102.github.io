@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://abbie.top/2017/09/12/MyBlog/</loc>
+    <loc>http://abbie.top/tag/index.html</loc>
     
-    <lastmod>2017-09-21T03:45:28.874Z</lastmod>
+    <lastmod>2017-09-21T05:07:09.256Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://abbie.top/gallery/index.html</loc>
+    
+    <lastmod>2017-09-21T04:56:39.856Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://abbie.top/about/index.html</loc>
+    
+    <lastmod>2017-09-21T04:56:04.423Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://abbie.top/2017/09/21/about/</loc>
+    
+    <lastmod>2017-09-21T04:50:23.881Z</lastmod>
     
   </url>
   
