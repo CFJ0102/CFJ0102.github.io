@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_lapin.png"/>
+	 <link rel="shortcut icon" href="/img/logo_lapin.png">
+	
+			
+    <title>
+    Abbie
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+
+			    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">abbie</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/hexo-bolg/">hexo-bolg</a></li><li><a class="category-link" href="/categories/webDemo/">webDemo</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tags/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://i.imgur.com/ZWP2TOt.png);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >图片轮播+导航条制作webDemo</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>页面布局前提基础：<code>HTML+CSS、CSS+DIV,float+position</code>属性</p>
+<p>布局：<code>header、main、footer</code></p>
+<p>学习制作图片轮播，借鉴慕课网学习</p>
+<h5 id="页头"><a href="#页头" class="headerlink" title="页头"></a>页头</h5><p><img src="https://i.imgur.com/Fa4kDp2.png" alt=""></p>
+<p>html:</p>
+<pre><code>    ```    &lt;div class=&quot;header&quot;&gt;
+            &lt;div class=&quot;logo&quot;&gt;
+                &lt;img src=&quot;css/images/logo.png&quot;alt=&quot;logo&quot; width=&quot;54&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;logo-font&quot;&gt;ICON&lt;/div&gt;
+            &lt;div class=&quot;nav&quot;&gt;
+                &lt;div class=&quot;nav-li&quot;&gt;首页&lt;/div&gt;
+                &lt;div class=&quot;nav-li&quot;&gt;图标库&lt;/div&gt;
+                &lt;div class=&quot;nav-li&quot;&gt;图标管理&lt;/div&gt;
+                &lt;div class=&quot;nav-li&quot;&gt;帮助&lt;/div&gt;
+                &lt;div class=&quot;nav-li&quot;&gt;. . .&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;icons&quot;&gt;
+                &lt;div class=&quot;i01&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;i02&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;i03&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;i04&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    ```    
+</code></pre><h5 id="导航栏"><a href="#导航栏" class="headerlink" title="导航栏"></a>导航栏</h5><p><img src="https://i.imgur.com/zJF1UnB.png" alt=""><br>接下来展示一个导航栏，鼠标悬停在“帮助”，字体颜色改变，以及出现一个列表，这里我们采用的是无序列表。当然这只是HTML部分</p>
+<p>注：css中，无序列表的列表项标签应该设为无：<code>list-style-type: none;</code></p>
+<p>html:</p>
+<pre><code>    ```&lt;div class=&quot;nav-li&quot;&gt;帮助
+           &lt;div class=&quot;nav-sub-3&quot;&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;功能介绍&lt;/li&gt;
+                    &lt;li&gt;图标绘制&lt;/li&gt;
+                    &lt;li&gt;代码应用&lt;/li&gt;
+                    &lt;li&gt;相关文章&lt;/li&gt;    
+                &lt;/ul&gt;
+            &lt;/div&gt; 
+        &lt;/div&gt;
+        ```
+</code></pre><h5 id="图标"><a href="#图标" class="headerlink" title="图标"></a>图标</h5><p><img src="https://i.imgur.com/UyAJGj0.png" alt=""></p>
+<p>图标在鼠标悬停时改变样式，实则是两个矢量图标不同颜色的切换，以上所有鼠标悬停改变样式的方法都是：<code>标签/元素：hover （子标签/子元素）{}</code><br>子标签/子元素省略，则是改变该标签/元素的样式</p>
+<h5 id="图片轮播"><a href="#图片轮播" class="headerlink" title="图片轮播"></a>图片轮播</h5><p>图片轮播的布局就不展示出来</p>
+<p><img src="https://i.imgur.com/rgV8rb9.png" alt=""><br>html:</p>
+<pre><code>```    &lt;div class=&quot;main&quot; id=&quot;main&quot;&gt;
+        &lt;div class=&quot;banner&quot; id=&quot;banner&quot;&gt;
+            &lt;a href=&quot;&quot;&gt;&lt;div class=&quot;banner-slide slide-active&quot;&gt;&lt;img src=&quot;css/images/bg2.jpg&quot; alt=&quot;bg1&quot; width=&quot;1100&quot; /&gt;&lt;/div&gt;&lt;/a&gt;
+            &lt;a href=&quot;&quot;&gt;&lt;div class=&quot;banner-slide &quot;&gt;&lt;img src=&quot;css/images/bg1.jpg&quot; alt=&quot;bg1&quot; width=&quot;1100&quot; /&gt;&lt;/div&gt;&lt;/a&gt;
+            &lt;a href=&quot;&quot;&gt;&lt;div class=&quot;banner-slide &quot;&gt;&lt;img src=&quot;css/images/bg3.jpg&quot; alt=&quot;bg4&quot; width=&quot;1100&quot; /&gt;&lt;/div&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;!-- href=&quot;javascript:void(0)&quot; a标签不做任何跳转 上下张按钮--&gt;
+        &lt;a href=&quot;javascript:void(0)&quot; class=&quot;button prev&quot; id=&quot;prev&quot;&gt;&lt;/a&gt;
+        &lt;a href=&quot;javascript:void(0)&quot; class=&quot;button next&quot; id=&quot;next&quot;&gt;&lt;/a&gt;
+        &lt;!-- 圆点导航 --&gt;
+        &lt;div class=&quot;dots&quot; id=&quot;dots&quot;&gt;
+            &lt;span class=&quot;active&quot;&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;span&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre><pre><code>js:
+
+    ```    // 用一个方法封装document.getElementId()
+        function byId(id){
+            // 判断id的字符串
+            return typeof(id)===&quot;string&quot;?document.getElementById(id):id;
+        }
+        // 全局变量
+            var index = 0,//设置索引
+                timer = null,
+                pics = byId(&quot;banner&quot;).getElementsByTagName(&quot;div&quot;),
+                dots = byId(&quot;dots&quot;).getElementsByTagName(&quot;span&quot;),
+                prev = byId(&quot;prev&quot;),
+                next = byId(&quot;next&quot;),
+                len = pics.length;
+        function slideImg(){
+            var main = byId(&quot;main&quot;);
+            var banner = byId(&quot;banner&quot;);
+            main.onmouseover = function(){
+            // 滑过清除定时器
+                if(timer)  clearInterval(timer);}
+            // 调用onmouseout事件
+            main.onmouseout = function(){
+            // 定时器 每过一段时间将slide-active放在不同图片a
+                timer = setInterval(function(){    
+                    index++;
+                    if(index &gt;=len){ index = 0;}
+                    // 切换图片
+                    changeImg();
+                },3000);
+            }
+            // 调用onmouseout方法
+            main.onmouseout();
+            // 点击圆点切换图片 遍历所有圆点，且绑定事件
+            for (var d=0; d&lt;len;d++) {
+                // 给所有sapn添加一个id属性，值为d，作为当前span的索引
+                dots[d].id=d;
+                dots[d].onclick = function(){
+                    // 改变index为当前span的索引
+                    index = this.id;
+                    // this.className = &quot;active&quot;;
+                    // 调用changeImg实现切换图片
+                    changeImg();
+                }    
+            }
+            // 上一张
+            next.onclick = function(){
+                index++;
+                if(index&gt;=len) index=0;
+                changeImg();
+            }
+            // 下一张
+            prev.onclick = function(){
+                index--;
+                if(index&lt;0) index=len-1;
+                changeImg();
+            }
+        }
+        // 切换图片
+        function changeImg(){
+            // 遍历banner下所有的div,将其隐藏
+            for(var i=0;i&lt;len;i++){
+                pics[i].style.display = &quot;none&quot;;
+                dots[i].className = &quot;&quot;;
+            }
+            //
+            pics[index].style.display = &quot;block&quot;;
+            dots[index].className = &quot;active&quot;;
+        }
+        slideImg();
+</code></pre><p><img src="https://i.imgur.com/met0Uyb.png" alt=""></p>
+<h5 id="页尾"><a href="#页尾" class="headerlink" title="页尾"></a>页尾</h5><p>页尾和页头也差不多的布局结构</p>
+<p>以上是简单制作的小demo</p>
+
+            </div>
+	    <!-- Post Comments -->
+            <div id="container"></div>
+
+            <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+
+            <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+
+            <script>var gitment = new Gitment({
+  
+              id: '',
+              
+
+owner: 'abbie',
+              repo: 'Comments',
+              oauth: {
+    
+                client_id: '026df2abd824f7b2c139',
+                client_secret: 'd22b1378174ff746c1f67692fba023f845439f13', 
+              },
+
+            })
+
+            gitment.render('container')
+
+            </script>
+
+
+
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://abbie.top/2017/09/19/图片轮播-导航条制作webDemo/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://abbie.top/2017/09/19/图片轮播-导航条制作webDemo/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://abbit.top " style="border-bottom: none;">abbie</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2017总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
