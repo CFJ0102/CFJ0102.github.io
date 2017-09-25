@@ -106,12 +106,65 @@
 </nav>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 ></h2></a>
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://i.imgur.com/WTUK0ep.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >JavaScript笔记</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                MdcPQaC24G
+                <h4 id="1-考察this"><a href="#1-考察this" class="headerlink" title="1.考察this"></a>1.考察this</h4><pre><code>    var length = 10;
+    function fn(){
+    console.log(this.length);
+    }
+
+    var obj = {
+    length:5,method:function(fn){fn();;arguments[0]();}
+    obj.method(fn,1); 
+</code></pre><p><img src="https://i.imgur.com/5Q8ghyC.png" alt=""></p>
+<p>   取对象可以用点操作符还可以用中括号，第二次执行时相当于调用了arguments方法，this指向了arguments,传了两个参数，故arguments长度为2</p>
+<h4 id="2-var和函数的提前声明"><a href="#2-var和函数的提前声明" class="headerlink" title="2.var和函数的提前声明"></a>2.var和函数的提前声明</h4><pre><code>    function fn(a){
+        console.log(a);
+        var a=2;       //var声明
+        function a(){  //函数声明
+            console.log(a);
+        }
+    }
+    fn(1);
+</code></pre><p><img src="https://i.imgur.com/hVPfEyc.png" alt=""></p>
+<h4 id="3-局部变量和全局变量"><a href="#3-局部变量和全局变量" class="headerlink" title="3.局部变量和全局变量"></a>3.局部变量和全局变量</h4><pre><code>    var f =true;
+    if(f===true){
+        var a = 10;//全局变量
+    }
+    function fn(){
+        b=20;//全局变量(没有用var声明的变量)
+        var c=30;//局部变量
+    }
+    fn();
+    console.log(a);
+    console.log(b);
+    console.log(c);
+</code></pre><p><img src="https://i.imgur.com/atUL9a6.png" alt=""></p>
+<p>function内的新声明的变量才是局部变量，而没有用var声明的变量在哪里都是全局变量。再次提醒切记只有function(){}内新声明的才能是局部变量，while{…}、if{…}、for(..) 之内的都是全局变量（除非本身包含在function内）</p>
+<h4 id="4-变量隐式声明"><a href="#4-变量隐式声明" class="headerlink" title="4.变量隐式声明"></a>4.变量隐式声明</h4><pre><code>    if(&#39;a&#39;in window){//a已提前声明好了，&#39;a&#39;in window为tru， a被赋值
+        var a = 10;
+    }
+    console.log(a);
+</code></pre><p><img src="https://i.imgur.com/5SwcMRa.png" alt=""></p>
+<p>function和var会提前声明，function{}内变量也会提前声明</p>
+<h4 id="5-给基本类型数据添加属性，不报错，但取值时是undefined"><a href="#5-给基本类型数据添加属性，不报错，但取值时是undefined" class="headerlink" title="5.给基本类型数据添加属性，不报错，但取值时是undefined"></a>5.给基本类型数据添加属性，不报错，但取值时是undefined</h4><pre><code>    var a =10;
+    a.pro = 10;//a.pro返回值是undefined
+    console.log(a.pro + a);//a.pro + a =undefined + 10 返回的是NaN
+    var s =&quot;hello&quot;;
+    s.pro = &quot;world&quot;;//s.pro返回值是undefined
+    console.log(s.pro + s);//undefined+hello 结果转换成字符串
+</code></pre><p><img src="https://i.imgur.com/jLqz7LQ.png" alt=""></p>
+<h4 id="6-函数声明优于变量声明"><a href="#6-函数声明优于变量声明" class="headerlink" title="6.函数声明优于变量声明"></a>6.函数声明优于变量声明</h4><pre><code>    console.log(typeof fn);
+    function fn(){};//声明fn函数
+    var fn;//声明fn变量
+    f();
+</code></pre><p><img src="https://i.imgur.com/KYnC99X.png" alt=""></p>
+<p>在代码逐行执行前，函数声明和变量声明会提前进行，而函数声明又会优于变量声明，这里的优于可以理解为晚于变量声明后，如果函数名和变量名相同，函数声明就能覆盖变量声明</p>
+<p>以上笔记转自于<a href="https://zhuanlan.zhihu.com/p/25829188?utm_medium=social&amp;utm_source=wechat_session" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/25829188?utm_medium=social&amp;utm_source=wechat_session</a></p>
+
             </div>
 	    <!-- Post Comments -->
             <div id="container"></div>
@@ -199,8 +252,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://abbie.top/baidu_verify_MdcPQaC24G.html';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://abbie.top/baidu_verify_MdcPQaC24G.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://abbie.top/2017/09/25/JavaScript笔记/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://abbie.top/2017/09/25/JavaScript笔记/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
